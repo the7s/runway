@@ -6,20 +6,23 @@
 
 ?>
 <!-- Link Gitalk 的支持文件  -->
+
+<div class="row">
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
-
-
 <div id="gitalk-container" class="" ></div>
 <script type="text/javascript">
-	var gitalk = new Gitalk({// gitalk的主要参数clientID: '复制刚才生成的clientID',
-		clientSecret: '复制刚才生成的clientSecret',
-		repo: '自己博客的地址',
-		owner: 'GitHub的用户名',
-		admin: ['Github的用户名'],
+	var gitalk = new Gitalk({
+        // gitalk的主要参数
+        clientID: '0acdd483257d3c78bd54',
+		clientSecret: '78bc5e954f84a4f9d1a8fc6f850489bbc8fd7369',
+		repo: 'https://amoker.com',
+		owner: 'the7s',
+		admin: ['the7s'],
 		id:window.location.pathname,
 	});
 	gitalk.render('gitalk-container');
 </script>
+</div>
 
 <!-- Gitalk end -->

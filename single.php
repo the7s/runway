@@ -6,5 +6,9 @@ if ( comments_open() || get_comments_number() ) :
 	comments_template();
 endif;
 
+?>
+</div>
+
+<?php
 get_sidebar();
 get_footer();
