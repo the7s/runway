@@ -1,5 +1,6 @@
 <!-- Content -->
-<section class="container main-load">
+
+<div class="col-md-9">
     <article class="post_article" itemscope itemtype="https://schema.org/Article">
         <?php if (have_posts()) while (have_posts()) {
             the_post();
@@ -13,4 +14,4 @@
         <div class="alignleft"><?php previous_post_link('%link'); ?></div>
         <div class="alignright"><?php next_post_link('%link'); ?></div>
     </nav>
-</section>
+</div>
