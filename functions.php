@@ -147,5 +147,7 @@ add_action( 'widgets_init', 'runway_widgets_init' );
 function memory_scripts() {
 	wp_enqueue_style('runway','');
 	wp_enqueue_style( 'runway', get_stylesheet_uri(), '', '1.0.0' );
+	wp_enqueue_style( 'bootstrap_css', 'https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css', array(), '3.3.7', 'all');
+	wp_enqueue_script( 'bootstrap_js', 'https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js', array ( 'jquery' ), '3.3.7', true);
 }
 add_action( 'wp_enqueue_scripts', 'memory_scripts' );
