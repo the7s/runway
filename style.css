@@ -9,3 +9,6 @@ Tags: custom header, fixed width, two columns, widgets, blog style
 --------------------------------------------------------------*/
 
 
+.content-sidebar {
+    top: 130px; position: sticky !important;
+}
