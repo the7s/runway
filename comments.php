@@ -21,7 +21,7 @@
 		repo: 'gittalk_repo',
 		owner: 'the7s',
 		admin: ['the7s'],
-		id: decodeURI(window.location.pathname),
+		id: '<?php the_ID(); ?>',
         title: '<?php the_title() ?>'
 	});
 	gitalk.render('gitalk-container');
