@@ -10,7 +10,7 @@
 <div class="row">
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
-<div id="gitalk-container" class="" ></div>
+<div id="gitalk-container" class="post-<?php the_ID()?>" ></div>
 <script type="text/javascript">
 	var gitalk = new Gitalk({
         // gitalk的主要参数
@@ -19,7 +19,8 @@
 		repo: 'gittalk_repo',
 		owner: 'the7s',
 		admin: ['the7s'],
-		id:decodeURI(window.location.pathname),
+		id: decodeURI(window.location.pathname),
+        title: <?php echo the_title(); ?>
 	});
 	gitalk.render('gitalk-container');
 </script>
